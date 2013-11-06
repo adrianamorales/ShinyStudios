@@ -1,0 +1,27 @@
+/*Google Webfonts Import*/
+
+
+/*Fanwood font*/
+@font-face {
+    font-family: 'fanwooditalic';
+    src: url('../font/fanwood/Fanwood-Italic-webfont.eot');
+    src: url('../font/fanwood/Fanwood-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/fanwood/Fanwood-Italic-webfont.woff') format('woff'),
+         url('../font/fanwood/Fanwood-Italic-webfont.ttf') format('truetype'),
+         url('../font/fanwood/Fanwood-Italic-webfont.svg#fanwooditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+@font-face {
+    font-family: 'fanwoodregular';
+    src: url('../font/fanwood/Fanwood-webfont.eot');
+    src: url('../font/fanwood/Fanwood-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/fanwood/Fanwood-webfont.woff') format('woff'),
+         url('../font/fanwood/Fanwood-webfont.ttf') format('truetype'),
+         url('../font/fanwood/Fanwood-webfont.svg#fanwoodregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
