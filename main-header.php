@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Shiny Studios </title>
+<title>Shiny Studios</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Template based on Bootstrap">
-<meta name="author" content="Pixel-Coder">
+<meta name="description" content="Shiny Studios LLC is an independent film company based out of the Greater Philadelphia area. Bringing local filmmakers together, Shiny Studios aspires to create engaging films that handle social issues.">
+<meta name="author" content="Shiny Studios LLC">
 
 <!-- the styles -->
 <link href="css/supersized.css" rel="stylesheet" media="screen">
@@ -42,23 +42,23 @@
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="brand" href="index.html"><img  src="img/logo.png" alt="Pixopulus" class="logo"></a>
+          <a class="brand" href="index.php"><img src="img/logo.png" alt="Shiny Studios" class="logo"></a>
           <div class="nav-collapse collapse">
             <ul class="nav pull-right">
-              <li><a href="index.html"><span class="current"><i class="icon-home"></i></span> Home</a></li>
+              <li><a href="index.php"><span class="current"><i class="icon-home"></i></span> Home</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="portfolio_iso.html"><span class="current"><i class="icon-picture"></i></span> Portfolio</a>
+              <li><a href="films.php"><span class="current"><i class="icon-picture"></i></span> Films</a>
               <li class="divider-vertical"></li>
-              <li class="active"><a href="aboutus.html"><span class="current"><i class="icon-group"></i></span> About us</a></li>
+              <li><a href="about.php"><span class="current"><i class="icon-group"></i></span> About</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="service.html"><span class="current"><i class="icon-check"></i></span> Service </a></li>
+              <li><a href="merchandise.php"><span class="current"><i class="icon-check"></i></span> Merchandise</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="contact.html"><span class="current"><i class="icon-envelope-alt"></i></span> Contact</a></li>
+              <li><a href="contact.php"><span class="current"><i class="icon-envelope-alt"></i></span> Contact</a></li>
               <li class="divider-vertical"></li>
               <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="blog.html">Blog List</a></li>
-                  <li><a href="post-blog.html">Blog Post</a></li>
+                  <li><a href="blog.php">Blog List</a></li>
+                  <li><a href="post-blog.php">Blog Post</a></li>
                   <li><a href="full_width.html">Full Width Page</a></li>
                   <li><a href="columns.html">Columns Example</a></li>
                   <li class="divider"></li>
@@ -66,7 +66,7 @@
                   <li><a href="font_awesome.html">Font Awesome</a></li>
                   <li><a href="list-styles.html">List Styles</a></li>
                   <li><a href="box_tables.html">Box / Tables</a></li>
-                  <li><a href="404.html">404 Page</a></li>
+                  <li><a href="404.php">404 Page</a></li>
                   <li><a href="elements.html">Elements and Typo</a></li>
                   <li class="dropdown-submenu">
                     <a tabindex="-1" href="#">More options</a>

@@ -227,6 +227,7 @@ a:focus {
 }
 #textfade {
 	padding-top: 20px;
+	min-height: 600px !important;
 }
 /*-------------------------------------------------------*/
 /*----------------------Navbar Styles------------------- */
@@ -362,6 +363,11 @@ a:focus {
 /*-------------------------------------------------------*/
 footer {
 }
+/*#controls-wrapper {
+	position: relative !important;
+	height: 100%;
+	padding-bottom: 10px;
+}*/
 #social {
 	float: left;
 	color: #999;
@@ -387,6 +393,18 @@ footer #social a:hover, footer #credits_footer a:hover {
 	margin: 0px 0px 0 0px;
 	line-height: 38px;
 }
+/*
+#twitterfeed { 
+	float: left;
+	margin-right: 20px;
+}
+.fb-like-box {
+	float: left;
+	background-color: #333333;
+	border-radius: 5px;
+	border: 1px #42423C solid;
+}
+*/
 /*-------------------------------------------------------*/
 /*------------Portfolio Fullscreen Styles--------------- */
 /*-------------------------------------------------------*/
@@ -1729,6 +1747,10 @@ input.span2, textarea.span2, .uneditable-input.span2 {
 /*------------------Error Page Style---------------------*/
 /*-------------------------------------------------------*/
 #error_page {
+}
+#error .row {
+	background-color: rgba(0, 0, 0, 0.8) !important;
+	padding: 10px !important;
 }
 .error-page {
 	text-align: center;
