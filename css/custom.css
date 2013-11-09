@@ -227,7 +227,12 @@ a:focus {
 }
 #textfade {
 	padding-top: 20px;
-	min-height: 600px !important;
+	min-height: 500px;
+}
+#nextslide, #prevslide {
+	z-index: 50;
+	background-color: #C87D4B !important;
+	position: fixed;
 }
 /*-------------------------------------------------------*/
 /*----------------------Navbar Styles------------------- */
@@ -363,11 +368,11 @@ a:focus {
 /*-------------------------------------------------------*/
 footer {
 }
-/*#controls-wrapper {
+#controls-wrapper {
 	position: relative !important;
-	height: 100%;
+	height: 250px;
 	padding-bottom: 10px;
-}*/
+}
 #social {
 	float: left;
 	color: #999;
@@ -393,17 +398,35 @@ footer #social a:hover, footer #credits_footer a:hover {
 	margin: 0px 0px 0 0px;
 	line-height: 38px;
 }
-/*
-#twitterfeed { 
+#tray-button {
+	display: none;
+}
+#feeds {
+	width: 100%;
+	margin: 0 auto;
+}
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
+.twitterfeed, .fb-like-box {
+	width: 47% !important;
 	float: left;
-	margin-right: 20px;
+}
+.twitterfeed {
+	margin-right: 1%;
 }
 .fb-like-box {
-	float: left;
 	background-color: #333333;
 	border-radius: 5px;
-	border: 1px #42423C solid;
+	border: 1px solid #444444;
 }
+@media (max-width:1208px) {
+	.twitterfeed, .fb-like-box {
+		width: 45% !important;
+	}
+}
+
+
 */
 /*-------------------------------------------------------*/
 /*------------Portfolio Fullscreen Styles--------------- */
