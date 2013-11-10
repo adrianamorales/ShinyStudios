@@ -1,0 +1,42 @@
+/* ################# Top Level Icon Menu CSS ############## */
+/***********************************************
+* DD Icon Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+
+ul.iconmenu{
+list-style: none;
+position: fixed;
+left: 0;
+bottom: 64px;
+margin: 0;
+padding: 0;
+width: 35px;
+background: #C87D4B;
+z-index: 100;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;r
+}
+
+ul.iconmenu li{
+text-align: center;
+cursor: pointer;
+}
+
+ul.iconmenu li a{
+display: block;
+text-decoration: none;
+color: black;
+padding: 12px 5px;
+}
+
+ul.iconmenu li a:hover {
+opacity: 1.0 !important;
+}
+
+@media (max-width: 480px) {
+	ul.iconmenu {
+		bottom: 50px !important;
+	}
+}

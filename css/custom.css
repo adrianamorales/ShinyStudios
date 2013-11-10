@@ -230,9 +230,16 @@ a:focus {
 	min-height: 500px;
 }
 #nextslide, #prevslide {
-	z-index: 50;
+	z-index: 100;
 	background-color: #C87D4B !important;
 	position: fixed;
+	border-radius: 2px;
+	opacity: 1.0 !important;
+}
+@media (max-width: 480px) {
+	#prevslide, #nextslide {
+		z-index: 100 !important;
+	}
 }
 /*-------------------------------------------------------*/
 /*----------------------Navbar Styles------------------- */
@@ -425,6 +432,7 @@ footer #social a:hover, footer #credits_footer a:hover {
 		width: 45% !important;
 	}
 }
+
 
 
 */

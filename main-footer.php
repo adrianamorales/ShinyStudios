@@ -10,9 +10,10 @@
         <div id="credits_footer"><small>Shiny Studios LLC &copy; 2013 </small></div>
         <div id="social">
 		<small> Follow us: </small>
-		<a class="facebook tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="Facebook" href="https://www.facebook.com/shinystudios"><i class="icon-facebook-sign icon-large"></i></a>  
-		<a class="twitter tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="Twitter" href="https://twitter.com/shiny00studios"><i class="icon-twitter-sign icon-large"></i></a> </div>
-        <a id="tray-button" class="tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="open slides"><i class="icon-folder-close-alt icon-large"></i></a> </div>
+		<a class="facebook tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="Facebook" href="https://www.facebook.com/shinystudios"><i class="fa fa-facebook-square fa-fw"></i></a>  
+		<a class="twitter tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="Twitter" href="https://twitter.com/shiny00studios"><i class="fa fa-twitter fa-fw"></i></a>
+        <a class="vimeo tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="Vimeo" href="http://http://vimeo.com/shiny00studios"><i class="fa fa-vimeo-square fa-fw"></i></a> </div>
+		<a id="tray-button" class="tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="open slides"><i class="icon-folder-close-alt icon-large"></i></a> </div>
 		<div id="feeds">
 		  <div class="twitterfeed"><a class="twitter-timeline" height="100" data-dnt="true" href="https://twitter.com/shiny00studios" data-widget-id="398236128035094529">Tweets by @shiny00studios</a></div>
 		  <div id="fb-root"></div>
@@ -38,6 +39,8 @@
 <script src="js/custom.js"></script> <!-- put inside custom.js all your javascript code, you can change the fullscreen slider images here also.--> 
 <script src="js/jquery.ui.totop.min.js"></script>
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}  </script> 
+
+
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script>
@@ -79,8 +82,7 @@
       $().UItoTop({ easingType: 'easeOutQuart' });
       
     });
-</script>
-        
+</script>        
 
 </body>
 </html>
