@@ -9,16 +9,13 @@
         <div class="row">
           <div class="span8"> 
             <!-- Contact us title -->
-            <h1>Contact<span class="cyan"> us</span> <span class="raleway"><span class="pink">// </span> How we can help you?</span></h1>
+            <h1>Contact<span class="cyan"> us</span> <span class="raleway"><span class="pink">// </span> How can we help you?</span></h1>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="span12">
-          <div class="map"></div>
-        </div>
         <div class="contact-form span7">
           <h2 class="header_line"><span>Get in touch:</span></h2>
           <p> Contact us with the form below and we will get back to you soon.</p>
@@ -44,19 +41,6 @@
             </div>
           </form>
           <small>(<span class="pink">*</span>required fields)</small> </div>
-        <div class="contact-address span5">
-          <h2  class="header_line"><span>Address:</span></h2>
-          <h3><span class="raleway">Shiny Studios LLC</span></h3>
-          <p><i class="icon-home icon-3x icon-muted"></i> <br>
-            Your Street 123 <br>
-            Your City, <strong>NW</strong><br>
-            Planet Earth</p>
-          <h2 class="header_line"><span>Phone:</span></h2>
-          <i class="icon-phone icon-3x icon-muted"></i>
-          <p><abbr title="Phone">P:</abbr> 123.456.789<br>
-            <abbr title="Fax">F:</abbr> 123.456.789-0 <br>
-            <abbr title="Mobile">M:</abbr> 987.654.321</p>
-        </div>
       </div>
     </div>
   </section>

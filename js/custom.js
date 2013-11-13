@@ -31,8 +31,8 @@ $.supersized({
 	thumbnail_navigation    :   0,			// Thumbnail navigation
 	slides 					:  	[			// Slideshow Images
 										{image : 'img/slides/slide1.jpg', title : '<h1><span class="pink raleway">Film: Boxes</span></h1>', thumb : 'img/slides/slide1_thumb.jpg'},
-										{image : 'img/slides/slide2.jpg', title : '<h1>Photographer<br>&Design<span class="pink raleway">Film: Complete</span></h1>', thumb : 'img/slides/slide2_thumb.jpg'},
-										{image : 'img/slides/slide3.jpg', title : '', thumb : 'img/slides/slide3_thumb.jpg'},
+										{image : 'img/slides/slide2.jpg', title : '<h1><span class="pink raleway">Film: Complete</span></h1>', thumb : 'img/slides/slide2_thumb.jpg'},
+										{image : 'img/slides/slide3.jpg', title : '<h1><span class="pink raleway">Film: Inside Out</span></h1>', thumb : 'img/slides/slide3_thumb.jpg'},
 										{image : 'img/slides/slide4.jpg', title : '<h1><span class="pink raleway">Film: A Bird without Wings</span></h1>', thumb : 'img/slides/slide4_thumb.jpg'}
 										],		
 								
