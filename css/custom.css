@@ -185,6 +185,7 @@ a:focus {
 /*----------------------Anchor Styles------------------- */
 /*-------------------------------------------------------*/
 #toTop {
+    z-index: 100;
 	display: none;
 	text-decoration: none;
 	position: fixed;
@@ -412,20 +413,12 @@ footer #social a:hover, footer #credits_footer a:hover {
 	width: 100%;
 	margin: 0 auto;
 }
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    width: 100% !important;
-}
-.twitterfeed, .fb-like-box {
-	width: 47% !important;
+.twitterfeed {
+	width: 50% !important;
 	float: left;
 }
 .twitterfeed {
 	margin-right: 1%;
-}
-.fb-like-box {
-	background-color: #333333;
-	border-radius: 5px;
-	border: 1px solid #444444;
 }
 @media (max-width:1208px) {
 	.twitterfeed, .fb-like-box {

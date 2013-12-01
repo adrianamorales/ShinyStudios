@@ -16,10 +16,6 @@
 		<a id="tray-button" class="tooltips" data-container="body" data-placement="top" data-trigger="hover" data-title="open slides"><i class="icon-folder-close-alt icon-large"></i></a> </div>
 		<div id="feeds">
 		  <div class="twitterfeed"><a class="twitter-timeline" height="100" data-dnt="true" href="https://twitter.com/shiny00studios" data-widget-id="398236128035094529">Tweets by @shiny00studios</a></div>
-		  <div id="fb-root"></div>
-		  <div id="fbcontainer">
-			<div class="fb-like-box" data-href="http://www.facebook.com/ShinyStudios" data-height="198" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
-		  </div>
 		</div>
 	</div>
   </div>
@@ -44,23 +40,6 @@
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script>
-	(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
- 
-	$(window).bind("load resize", function(){
-		var container_width = $('#fbcontainer').width();
-		$('#container').html('<div class="fb-like-box" ' +
-		'data-href="https://www.facebook.com/adobegocreate"' +
-		' data-width="' + container_width + '" data-height="730" data-show-faces="false" ' +
-		'data-stream="true" data-header="true"></div>');
-		FB.XFBML.parse( );
-	});
-   
 	jQuery(window).load(function() { 
 	$x = $(window).width();   
 	if($x > 1024){     

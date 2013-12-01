@@ -25,7 +25,7 @@
       <h2 class="header_line"><span>Our Team</span></h2>
       <div class="row contentStart">
         <?php
-        /*include("config.inc.php");
+        include("config.inc.php");
         $dbname = $config['db'];
         $user = $config['user'];
         $pass = $config['pass'];
@@ -47,16 +47,16 @@
           echo '</div></div><div class="skillset">';
           echo '<h2 class="header_line"></span><small>'.($row['first'])."'s </small>Skills</span></h2>";
           echo '<div class="list-block contentStart">';
-          $sql = "SELECT * FROM skills WHERE email = '".($row['email'])."'";
+          $sql = "SELECT * FROM skills WHERE first = '".($row['first'])."' AND last = '".($row['last'])."'";
           $stmt2 = $conn->prepare($sql);
           $stmt2->execute();
           foreach($stmt2 as $row2) {
             echo '<div class="progress progress-striped active"> <div class="bar" style="width: '.($row2['percent']).'%">'.($row2['skill']).'</div></div>';
           }
           echo '</div></div></div></div>';
-        }*/
+        }
         ?>
-
+<!--
         <div class="span4">
           <div class="about_item">
             <div class="about_item_center"> <img src="img/memberPhotos/AWolf_headshot.jpg" alt="Angela Wolf">
@@ -280,53 +280,7 @@
             </div>
           </div>
         </div>
- 
-    </div>
-    
-    <div class="container testimonials about_us">
-      <h2 class="header_line"><span>What our clients say</span></h2>
-      <div class="accordion" id="accordion2">
-        <div class="accordion-group">
-          <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-            <h4>Jane Doe <span class="spacer">/</span> <small>Ceo of Ipsum Lorem</small></h4>
-            </a> </div>
-          <div id="collapseOne" class="accordion-body collapse in">
-            <div class="accordion-inner">
-              <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <small> Jon Doe <span class="spacer">/</span> <a href="#">company.com</a></small> </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-group">
-          <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-            <h4>Jane Doe <span class="spacer">/</span> <small>Ceo of Ipsum Lorem</small></h4>
-            </a> </div>
-          <div id="collapseTwo" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <small> Jennifer Doe <span class="spacer">/</span> <a href="#">company.com</a></small> </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-group">
-          <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-            <h4>Jonny Doe <span class="spacer">/</span> <small>Ceo of Ipsum Lorem</small></h4>
-            </a> </div>
-          <div id="collapseThree" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <small> Jennifer Doe <span class="spacer">/</span> <a href="#">company.com</a></small> </blockquote>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-group">
-          <div class="accordion-heading"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-            <h4>Jennifer Doe <span class="spacer">/</span> <small>Ceo of Ipsum Lorem</small></h4>
-            </a> </div>
-          <div id="collapseFour" class="accordion-body collapse">
-            <div class="accordion-inner">
-              <blockquote>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <small> Jennifer Doe <span class="spacer">/</span> <a href="#">company.com</a></small> </blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
+ -->
     </div>
   </section>
 </div>

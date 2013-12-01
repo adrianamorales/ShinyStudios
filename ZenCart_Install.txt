@@ -1,0 +1,36 @@
+I uploaded only the pages that I edited but I also 
+configured the following through the admin controls:
+
+Under Configuration:
+	-> Customer Details
+		-> Date of Birth: False
+		-> Company: False
+		-> Fax Number: False
+	-> Layout Settings
+		-> Column Width - Left Boxes: 200px
+		-> Column Right Status: 0
+
+Under Tools
+	-> Template Selection
+		-> Edit -> Select Shiny Studios Custom Template
+	-> Layout Boxes Controller
+		-> Need to reset
+		-> search_header.php: 
+			Left/right column status: ON 
+			Single Column status: OFF
+		-> Turn both left/right and single status OFF:
+			-> Manufacturers.php
+			-> Reviews.php
+			-> More_Information.php
+			-> Banner_box.php
+			-> Ezpages.php
+			-> Music_genres.php
+			-> Record_companies.php
+			-> banner_box_all.php
+			-> search.php
+			-> banner_box2.php
+			-> manufacturer_info.php
+			-> whos_online.php
+	-> Define Pages Editor For:
+		-> Select define_main_page.php
+		-> Delete all text.

@@ -53,7 +53,7 @@
               <li class="divider-vertical"></li>
               <li><a href="about.php"><span class="current"><i class="icon-group"></i></span> About</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="merchandise.php"><span class="current"><i class="icon-check"></i></span> Merchandise</a></li>
+              <li><a href="merchandise/index.php"><span class="current"><i class="icon-check"></i></span> Merchandise</a></li>
               <li class="divider-vertical"></li>
               <li><a href="contact.php"><span class="current"><i class="icon-envelope-alt"></i></span> Contact</a></li>
               <li class="divider-vertical"></li>

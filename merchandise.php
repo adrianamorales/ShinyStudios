@@ -8,7 +8,6 @@
       <div class="container clearfix">
         <div class="row">
           <div class="span12"> 
-            <!-- Portfolio title -->
             <h1>Merchandise<span class="raleway"> <span class="pink">//</span> Support our work.</span></h1>
           </div>
         </div>
@@ -18,14 +17,13 @@
       <div class="gallerychooser">
         <ul class="gallerychooserList">
           <li class="current"><a data-filter="article.portfolio" href="#">All</a></li>
-          <li><a data-filter="article.portfolio[data-category~='design']" href="#">Design</a></li>
-          <li><a data-filter="article.portfolio[data-category~='photography']" href="#">Photography</a></li>
-          <li><a data-filter="article.portfolio[data-category~='branding']" href="#">Branding</a></li>
-          <li><a data-filter="article.portfolio[data-category~='video']" href="#">Video</a></li>
+          <li><a data-filter="article.portfolio[data-category~='A Bird Without Wings']" href="#">A Bird Without Wings</a></li>
         </ul>
       </div>
+      <?php
+      ?>
       <section class="portfolio_container">
-        <article class="portfolio" data-category="branding">
+        <article class="portfolio" data-category="A Bird Without Wings">
           <section class="thumbImage"> <img src="img/portfolio/work1-thumb.jpg" alt="" class="fullwidth">
             <div class="thumbTextWrap">
               <div class="thumbText">
