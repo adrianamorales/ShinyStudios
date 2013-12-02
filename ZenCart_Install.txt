@@ -9,6 +9,7 @@ Under Configuration:
 	-> Layout Settings
 		-> Column Width - Left Boxes: 200px
 		-> Column Right Status: 0
+		-> CSS Buttons: 1
 
 Under Tools
 	-> Template Selection
@@ -31,6 +32,7 @@ Under Tools
 			-> banner_box2.php
 			-> manufacturer_info.php
 			-> whos_online.php
+	-> Remove all banners
 	-> Define Pages Editor For:
 		-> Select define_main_page.php
 		-> Delete all text.

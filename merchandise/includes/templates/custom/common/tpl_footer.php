@@ -50,6 +50,7 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 </div>
 
 <!-- the javascript on bottom to improve loading speed================================================== -->
+<script type="text/javascript" src="js/prefixfree.min.js"></script> 
 <script src="../js/jquery-1.8.3.min.js"></script> 
 <script src="../js/bootstrap.min.js"></script> 
 <script src="../js/jquery.easing.min.js"></script> 
@@ -59,12 +60,19 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script> 
 <script src="../js/jquery.ui.map.min.js"></script> 
 <script src="../js/jquery.colorbox-min.js"></script> 
-<script src="../js/custom.js"></script> <!-- put inside custom.js all your javascript code, you can change the fullscreen slider images here also.--> 
+<script src="includes/templates/custom/custom.js"></script> <!-- put inside custom.js all your javascript code, you can change the fullscreen slider images here also.--> 
 <script src="../js/jquery.ui.totop.min.js"></script>
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='../js/jquery.preloader.js'></"+"script>");}  </script> 
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+<script>
+	jQuery(window).load(function() { 
+	$x = $(window).width();   
+	if($x > 1024){     
+		jQuery("#textfade .row").preloader();    }  
+		jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});  
+	}); 
+</script>
 <script type="text/javascript">
     $(document).ready(function() {
       $().UItoTop({ easingType: 'easeOutQuart' });
