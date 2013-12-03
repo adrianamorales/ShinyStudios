@@ -23,17 +23,20 @@
 
 <!-- the javascript on bottom to improve loading speed================================================== -->
 <script type="text/javascript" src="js/prefixfree.min.js"></script> 
-<script src="js/jquery-1.8.3.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.easing.min.js"></script> 
-<script src="js/supersized.3.2.7.min.js"></script> 
-<script src="theme/supersized.shutter.min.js"></script>
-<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>  
-<script src="http://maps.google.com/maps/api/js?sensor=true"></script> 
-<script src="js/jquery.ui.map.min.js"></script> 
-<script src="js/jquery.colorbox-min.js"></script> 
-<script src="js/custom.js"></script> <!-- put inside custom.js all your javascript code, you can change the fullscreen slider images here also.--> 
-<script src="js/jquery.ui.totop.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/modernizr.custom.24376.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.min.js"></script> 
+<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script> 
+<script type="text/javascript" src="theme/supersized.shutter.js"></script>
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script> 
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+<script type="text/javascript" src="js/jquery.ui.map.min.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.custom.js"></script> 
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script> <!-- put inside custom.js all your javascript code, you can change the fullscreen slider images here also.--> 
+<script type="text/javascript" src="js/jquery.ui.totop.min.js"></script> 
 <script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js/jquery.preloader.js'></"+"script>");}  </script> 
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
