@@ -49,7 +49,14 @@
             <ul class="nav pull-right">
               <li><a href="index.php"><span class="current"><i class="icon-home"></i></span> Home</a></li>
               <li class="divider-vertical"></li>
-              <li><a href="films.php"><span class="current"><i class="icon-picture"></i></span> Films</a>
+               <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Films <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="a-bird-without-wings.php">A Bird Without Wings </a></li>
+                  <li><a href="boxes.php">Boxes</a></li>
+                  <li><a href="complete.php">Complete</a></li>
+                  <li><a href="inside-out.php">Inside Out</a></li>
+              </ul>
+              </li>
               <li class="divider-vertical"></li>
               <li><a href="about.php"><span class="current"><i class="icon-group"></i></span> About</a></li>
               <li class="divider-vertical"></li>
@@ -57,30 +64,7 @@
               <li class="divider-vertical"></li>
               <li><a href="contact.php"><span class="current"><i class="icon-envelope-alt"></i></span> Contact</a></li>
               <li class="divider-vertical"></li>
-              <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="blog.php">Blog List</a></li>
-                  <li><a href="post-blog.php">Blog Post</a></li>
-                  <li><a href="full_width.html">Full Width Page</a></li>
-                  <li><a href="columns.html">Columns Example</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Extra</li>
-                  <li><a href="font_awesome.html">Font Awesome</a></li>
-                  <li><a href="list-styles.html">List Styles</a></li>
-                  <li><a href="box_tables.html">Box / Tables</a></li>
-                  <li><a href="404.php">404 Page</a></li>
-                  <li><a href="elements.html">Elements and Typo</a></li>
-                  <li class="dropdown-submenu">
-                    <a tabindex="-1" href="#">More options</a>
-                    <ul class="dropdown-menu">
-                      <li><a tabindex="-1" href="#">Second level link</a></li>
-                      <li><a tabindex="-1" href="#">Second level link</a></li>
-                      <li><a tabindex="-1" href="#">Second level link</a></li>
-                      <li><a tabindex="-1" href="#">Second level link</a></li>
-                      <li><a tabindex="-1" href="#">Second level link</a></li>
-                    </ul>
-                  </li>
-                </ul>
+              <li><a href="blog.php"><span class="current"><i class="icon-group"></i></span> Blog</a></li>
             </ul>
           </div>
           <!--/.nav-collapse --> 
