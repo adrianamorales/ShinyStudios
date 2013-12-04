@@ -58,11 +58,13 @@
     
     <div class="gallerychooser">
       <ul class="gallerychooserList">
-        <li class="current"><a data-filter="article.portfolio" href="#">Links</a></li>
+        <li class="current"><a data-filter="article.portfolio" href="#">All</a></li>
+        <li><a data-filter="article.portfolio[data-category~='links']" href="#">Links</a></li>
+        <li><a data-filter="article.portfolio[data-category~='behind-the-scenes']" href="#">Behind-the-scenes</a></li>
       </ul>
     </div>
     <section class="portfolio_container">
-      <article class="portfolio">
+      <article class="portfolio" data-category="links">
         <section class="thumbImage"> <img src="img/boxes/thumbs/imdbthumb.jpg" alt="" class="fullwidth">
           <div class="thumbTextWrap">
             <div class="thumbText">
@@ -73,7 +75,7 @@
         </section>
       </article>
   
-      <article class="portfolio">
+      <article class="portfolio" data-category="links">
         <section class="thumbImage"> <img src="img/boxes/thumbs/trailerthumb.jpg" alt="" class="fullwidth">
           <div class="thumbTextWrap">
             <div class="thumbText">
@@ -84,7 +86,7 @@
         </section>
       </article>
 
-      <article class="portfolio">
+      <article class="portfolio" data-category="links">
         <section class="thumbImage"> <img src="img/boxes/thumbs/filmthumb.jpg" alt="" class="fullwidth">
           <div class="thumbTextWrap">
             <div class="thumbText">
@@ -94,6 +96,17 @@
           </div>
         </section>
       </article>
+      
+      <?php
+        $dir = opendir("img/boxes/gallery");
+        while (($file = readdir($dir)) !== false) {
+          if(substr( $file, -3 ) == "jpg" or substr( $file, -3 ) == "JPG" or substr( $file, -3 ) == "png" or substr( $file, -3 ) == "PNG") {
+            echo '<article class="portfolio" data-category="behind-the-scenes"><section class="thumbImage"> <img src="img/boxes/gallery/'.$file.'" alt="" class="fullwidth"><div class="thumbTextWrap"><div class="thumbText"> <h3 class="sectionTitle">Behind the Scenes</h3> <a class="thumbLink portfolio_pics" href="img/boxes/gallery/'.$file.'"  title="Boxes"></a>  </div></div></section></article>';
+          }
+        }
+        closedir($dir);
+      ?>
+      
     </section>
     
   </div>
