@@ -86,7 +86,7 @@ FORM, SELECT, INPUT {
 	margin: 0.1em;
 	}
 INPUT {
-  padding: 0 !important;
+  padding: 0;
 }
 TEXTAREA {
 	margin: auto;
@@ -116,6 +116,7 @@ LABEL.checkboxLabel, LABEL.radioButtonLabel {
 LABEL.inputLabel {
 	width: 11em;
 	float: left;
+  margin-left: 3px;
 }
 LABEL.inputLabelPayment {
 	width: 15em;
@@ -136,6 +137,10 @@ HR {
 	margin-top: 0.5em;
 	border: none;
 	border-bottom: 1px solid #9a9a9a;
+}
+input[type="text"] {
+  padding: 0 !important;
+  width: 8em !important;
 }
 .clearBoth {
 	clear: both;
@@ -159,10 +164,6 @@ HR {
 #createAccountForm .cssButton , #createAccountForm  .cssButtonHover, 
 #cartAdd .cssButton, #cartAdd .cssButtonHover {
   width: 18em !important;
-}
-.btn-navbar {
-  position: relative;
-  left: 150px !important;
 }
 #logo, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .centerBoxContentsAlsoPurch, .attribImg {
 	float: left;
@@ -259,25 +260,6 @@ HR {
   text-transform: uppercase;
   position: relative;
   top: -10px;
-}
-#navMainWrapper {
-  height: 2.5em;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 0 auto;
-  margin-top: 105px;
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.9);
-}
-@media all and (min-width: 979px) and (max-width: 1200px) {
-  #navMainWrapper {
-    margin-top: 180px;
-  }
-}
-@media all and (max-width: 979px) {
-  #navMainWrapper {
-    margin-top: 5%;
-  }
 }
 
 .navbar-inverse .navbar-inner {
@@ -419,7 +401,7 @@ HR {
 	padding: 1em;
 }
 #cartAdd INPUT[type="text"] {
-  width: 50px !important;
+  width: 8em !important;
 }
 
 .tableHeading, #cartSubTotal {
@@ -482,6 +464,25 @@ HR {
 	margin-left: 1em;
 }
 
+.listingDescription {
+  padding: 0 2em; 
+  text-align: left;
+}
+#productListing {
+  margin: 0 3em;
+  margin-bottom: 2em;
+}
+#productsListingTopNumber, #productsListingBottomNumber {
+  padding: 10px 0;
+  position: relative;
+  left: -2.5em;
+}
+#indexProductListCatDescription {
+  background: rgba(0,0,0,0.3);
+  padding: 2em;
+}
+
+
 #mediaManager {
 	width: 50%; 
 	margin: 0.2em;
@@ -528,6 +529,8 @@ HR {
 .amount {
 	width: 5.5em;
 }
+
+
 
 /*Image Display*/
 #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage {
@@ -608,9 +611,10 @@ h3.rightBoxHeading a:hover {
 .centerBoxHeading {
   background: rgba(0, 0, 0, 0.5);
 }
-.centeredContent, TH, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, #navCatTabsWrapper, #navEZPageNextPrev, #bannerOne, #bannerTwo,  #bannerThree,  #bannerFour,  #bannerFive,  #bannerSix, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP, .center, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, .cartTotalsDisplay, #cartBoxGVBalance, .leftBoxHeading, .centerBoxHeading,.rightBoxHeading, .productListing-data, .accountQuantityDisplay, .ratingRow, LABEL#textAreaReviews, #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .gvBal, .attribImg {
+.centeredContent, TH, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, #navCatTabsWrapper, #navEZPageNextPrev, #bannerOne, #bannerTwo,  #bannerThree,  #bannerFour,  #bannerFive,  #bannerSix, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP, .center, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, .cartTotalsDisplay, #cartBoxGVBalance, .leftBoxHeading, .centerBoxHeading,.rightBoxHeading, #productListingTopNumber, .productListing-data, .accountQuantityDisplay, .ratingRow, LABEL#textAreaReviews, #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .gvBal, .attribImg {
 	text-align: center;
 }
+
 
 #bestsellers .wrapper {
 	margin: 0em 0em 0em 1.5em;
@@ -635,6 +639,24 @@ h3.rightBoxHeading a:hover {
 }
 
 /*misc*/
+#merchandiseTitle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0px;
+  margin: 0 auto;
+  margin-top: 105px !important;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.5) inset, 0px 1px 0px rgba(255,255,255,0.1);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  border-top: 10px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+@media all and (max-width: 979px) {
+  #merchandiseTitle {
+    margin-top: 0px !important;
+  }
+}
 .back {
 	float: left;
 }

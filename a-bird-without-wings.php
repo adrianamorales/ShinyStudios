@@ -21,9 +21,23 @@
          <div id="myCarousel" class="carousel slide proj-det"> 
                   <!-- Carousel items -->
                   <div class="carousel-inner main-img">
-                    <div class="active item"><a href="img/blog/post1.jpg" class="gallery_pics magnifier" title="Shadow in Motion" ><img alt="" src="img/blog/post1.jpg"></a></div>
-                    <div class="item"><a href="img/blog/post2.jpg" class="gallery_pics magnifier" title="Design with Passion" ><img alt="" src="img/blog/post2.jpg"></a></div>
-                  </div>
+                  <?php
+                    $dir = opendir("img/ABwoW");
+                    $active = 0;
+                    while (($file = readdir($dir)) !== false) {
+                      if(substr( $file, -3 ) == "jpg" or substr( $file, -3 ) == "JPG" or substr( $file, -3 ) == "png" or substr( $file, -3 ) == "PNG") {
+                        if ($active == 0) {
+                          echo '<div class="active item"><a href="img/ABwoW/'.$file.'" class="gallery_pics magnifier" title="'.$file.'" ><img alt="" src="img/ABwoW/'.$file.'"></a></div>';
+                          $active = 1;
+                        }
+                        else {
+                          echo '<div class="item"><a href="img/ABwoW/'.$file.'" class="gallery_pics magnifier" title="'.$file.'" ><img alt="" src="img/ABwoW/'.$file.'"></a></div>';
+                        }
+                      }
+                    }
+                    closedir($dir);
+                  ?>
+                   </div>
                   <!-- Carousel nav --> 
                   <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a> <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a> </div>
         </div>
@@ -53,157 +67,46 @@
       </div>
     </div>
     
-
-  
-      <div class="gallerychooser">
-        <ul class="gallerychooserList">
-          <li class="current"><a data-filter="article.portfolio" href="#">All</a></li>
-          <li><a data-filter="article.portfolio[data-category~='design']" href="#">Design</a></li>
-          <li><a data-filter="article.portfolio[data-category~='photography']" href="#">Photography</a></li>
-          <li><a data-filter="article.portfolio[data-category~='branding']" href="#">Branding</a></li>
-          <li><a data-filter="article.portfolio[data-category~='video']" href="#">Video</a></li>
-        </ul>
-      </div>
-      <section class="portfolio_container">
-        <article class="portfolio" data-category="branding">
-          <section class="thumbImage"> <img src="img/portfolio/work1-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work1.jpg"  title="Give your pictures names."></a> 
-              </div>
-            </div>
-
-          </section>
-        </article>
-        
-        
-        <article class="portfolio" data-category="photography">
-          <section class="thumbImage"> <img src="img/portfolio/work2-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work2-thumb.jpg"  title="Give your pictures names."></a> 
-                </div>
-            		</div>
-          </section>
-        </article>
-        
-        
-        <article class="portfolio" data-category="video">
-          <section class="thumbImage"><img src="img/portfolio/work3-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work3.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        <article class="portfolio" data-category="design">
-          <section class="thumbImage"> <img src="img/portfolio/work4-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work4.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        
-        <article class="portfolio" data-category="photography">
-          <section class="thumbImage"> <img src="img/portfolio/work5-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work5.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        <article class="portfolio" data-category="video">
-          <section class="thumbImage"> <img src="img/portfolio/work6-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work6.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        <article class="portfolio" data-category="design">
-          <section class="thumbImage"> <img src="img/portfolio/work7-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work7.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        <article class="portfolio" data-category="photography">
-          <section class="thumbImage"> <img src="img/portfolio/work3-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work3.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        <article class="portfolio" data-category="video">
-          <section class="thumbImage"> <img src="img/portfolio/work2-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work2.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        <article class="portfolio" data-category="design">
-          <section class="thumbImage"> <img src="img/portfolio/work1-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work1.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-        
-        
-        <article class="portfolio" data-category="photography">
-          <section class="thumbImage"> <img src="img/portfolio/work2-thumb.jpg" alt="" class="fullwidth">
-            <div class="thumbTextWrap">
-              <div class="thumbText">
-                <h3 class="sectionTitle">Gallery Item</h3>
-                <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
-                <a class="thumbLink portfolio_pics" href="img/portfolio/work2.jpg"  title="Give your pictures names."></a> 
-                </div>
-            </div>
-          </section>
-        </article>
-       
+    
+    <div class="gallerychooser">
+      <ul class="gallerychooserList">
+        <li class="current"><a data-filter="article.portfolio" href="#">Links</a></li>
+      </ul>
     </div>
+    <section class="portfolio_container">
+      <article class="portfolio">
+        <section class="thumbImage"> <img src="img/abwow/thumbs/websitethumb.jpg" alt="" class="fullwidth">
+          <div class="thumbTextWrap">
+            <div class="thumbText">
+              <h3 class="sectionTitle">Website</h3>
+              <a class="thumbLink portfolio_pics" href="http://www.abirdwithoutwings.com/"  title="A Bird without Wings"></a> 
+            </div>
+          </div>
+        </section>
+      </article>
+  
+      <article class="portfolio">
+        <section class="thumbImage"> <img src="img/abwow/thumbs/fundraiserthumb.jpg" alt="" class="fullwidth">
+          <div class="thumbTextWrap">
+            <div class="thumbText">
+              <h3 class="sectionTitle">Fundraiser Video</h3>
+              <a class="thumbLink portfolio_pics" href="http://vimeo.com/60339224"  title="A Bird without Wings"></a> 
+            </div>
+          </div>
+        </section>
+      </article>
 
+      <article class="portfolio">
+        <section class="thumbImage"> <img src="img/abwow/thumbs/abusethumb.jpg" alt="" class="fullwidth">
+          <div class="thumbTextWrap">
+            <div class="thumbText">
+              <h3 class="sectionTitle">Abuse Stops With Me</h3>
+              <a class="thumbLink portfolio_pics" href="http://vimeo.com/69757043"  title="A Bird without Wings"></a> 
+            </div>
+          </div>
+        </section>
+      </article>
+    </section>
     
   </div>
 </div>

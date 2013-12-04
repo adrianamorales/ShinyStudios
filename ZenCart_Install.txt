@@ -10,6 +10,13 @@ Under Configuration:
 		-> Column Width - Left Boxes: 200px
 		-> Column Right Status: 0
 		-> CSS Buttons: 1
+	-> Define Page Status
+		-> Change the following values to 3:
+			Define Privacy Status
+			Define Conditions of Use
+			Define Discount Coupon
+			Define Site Map Status
+			Define Page 2, Define Page 3, Define Page 4
 
 Under Tools
 	-> Template Selection
